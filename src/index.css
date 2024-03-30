@@ -1,13 +1,84 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  color: white;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  height: 100vh;
+  display: flex;
+  background-color: #020230;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url("C:\\Users\\Bilgisayar Dünyası\\Desktop\\FE\\React\\soru-cevap\\soru-cevap\\public\\assets\\bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.top {
+  height: 50%;
+  position: relative;
+}
+
+.timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border:5px solid white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+}
+
+.bottom {
+  height: 50%;
+}
+
+.pyramid {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.moneyList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.moneyListItem {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px
+}
+
+.moneyListItem.active {
+  background-color: teal;
+}
+
+.moneyListItemNumber {
+  font-size: 18px;
+  font-weight: 100;
+  width: 30%;
+
+}
+
+.moneyListamount {
+  font-size: 20px;
+  font-weight: 300;
 }
